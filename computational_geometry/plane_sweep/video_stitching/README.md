@@ -52,3 +52,33 @@ which cover the sporting event `[0, 10]`.
 **Explanation**: Notice you can have extra video after the event ends.
 
 ## Solution
+
+First sort the clips according the starting point. Then we can perform a plane sweep across the intervals. Intuition for this maneuver is that as the plane sweeps across, the intervals intersecting with the plane are clip contents that are in sync. Example 1 can be visualized as the following:
+
+```text
+input: clips = [[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], T = 10
+
+after scorting:
+0  1  2  3  4  5  6  7  8  9  10
+[-----]
+   [-----------------------]
+   [-----------]
+            [-----]
+               [-----------]
+                        [-----]
+```
+
+As the plane sweeps from left to right, we greedily select the next interval that has the farthest ending point. The intuition for this is that if the next interval can't cover some gap, then a smaller interval certainly can't neither.
+
+In the above example, the second interval we select should be the interval `[1,9]`, if the ending point `9` lands on some point `t` that can't be covered by an interval, selecting smaller intervals to cover for the distance between `[0,9]` can't be of help.
+
+Algorithm wise, for the current interval we have selected, find all intervals that have a starting point that lands within the current interval. Amongst these select one with the farthest ending point for the next interval we select. By the end we return a count of the intervals we've selected.
+
+### Time Complexity
+
+The biggest bottleneck is the sorting since the plane sweep only takes linear time. So `O(n*log(n))` is the time complexity.
+
+### Space Complexity
+
+Sorting happens in place so the space complexity is constant. `O(1)`.
+
