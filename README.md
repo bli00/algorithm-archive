@@ -11,12 +11,12 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 
 ```text
 /
-|-- dynamic_programming/
-|   `-- backtracking/
-|       `-- n_queens/
-`-- computational_geometry/
-    `-- plane_sweep/
-        `-- video_stitching/
+|-- computational_geometry/
+|   `-- plane_sweep/
+|       `-- video_stitching/
+`-- dynamic_programming/
+    `-- backtracking/
+        `-- n_queens/
 ```
 
 [1]: https://leetcode.com/problems/n-queens/
