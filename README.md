@@ -13,7 +13,7 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 ```text
 /
 |-- bit_manipulation/
-|   `-- UTF-8_validation
+|   `-- UTF-8_validation/
 |-- computational_geometry/
 |   `-- plane_sweep/
 |       `-- video_stitching/
