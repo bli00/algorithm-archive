@@ -59,7 +59,7 @@ Type 2:
 
 Our algorithm will attempt to find as many type 1 mismatches pairs as possible. That is, when there is a mismatch, our algorithm will attempt to find another that is mismatched in the same way.
 
-Since the characters are binary, we only need to store one character from one of the strings. That is, we only need to count the mismatched 'x' and 'y' in `s1`. Then we can determine the number of swaps by the parity of both counts. Call these counts `xs` and `ys`.
+Since the characters are binary, we only need to store the mismatched character from one of the strings. That is, we only need to count the mismatched 'x' and 'y' in `s1`. Then we can determine the number of swaps by the parity of both counts. Call these counts `xs` and `ys`.
 
 Since the mismatches need to come in pairs, a odd total count of mismatches indicates that the strings cannot be repaired. So our 'x' and 'y' mismatch counts need to be either both odd or both even.
 
