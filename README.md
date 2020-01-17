@@ -4,12 +4,13 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 
 ## Table of Contents
 
-| Problem              | Solutions          |
-| -------------------- |:------------------:|
-| [N-Queens][1]        | backtracking       |
-| [Video Stitching][2] | plane sweep        |
-| [UTF-8 Validation][3]| bit manipulation   |
-| [Minimum Swaps][4]   | Greedy             |
+| Problem                                          | Solutions           |
+| ------------------------------------------------ |:-------------------:|
+| [N-Queens][1]                                    | backtracking        |
+| [Video Stitching][2]                             | plane sweep         |
+| [UTF-8 Validation][3]                            | bit manipulation    |
+| [Minimum Swaps][4]                               | greedy              |
+| [Number of Submatrices That Sum to Target][5]    | dynamic programming |
 
 ```text
 /
@@ -19,8 +20,9 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 |   `-- plane_sweep/
 |       `-- video_stitching/
 |-- dynamic_programming/
-|   `-- backtracking/
-|       `-- n_queens/
+|   |-- backtracking/
+|   |   `-- n_queens/
+|   `-- num_submatrix_sum_target/
 `-- greedy/
     `-- minimum_swap/
 ```
@@ -29,3 +31,5 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 [2]: https://leetcode.com/problems/video-stitching/
 [3]: https://leetcode.com/problems/utf-8-validation/
 [4]: https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/
+[5]: https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
+
