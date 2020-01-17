@@ -39,8 +39,7 @@ We can regard every diagonal as a function of `y = mx + b`, where `m` is the
 slope and `b` is the y-intercept. Since the diagonals will only have a slope of
 either `1` or `-1`. we have the functions `y = x + b` and `y = -x + b`, which
 implies `y + x = b` and `y - x = b`. A coordinate `(x',y')` on the same diagonal
-will have the same y-intercept as `(x,y)`. Solving for `b` gives us `x + y = x'
-+ y'` and `y - x = y' - x'`. This is critial information that will be used to
+will have the same y-intercept as `(x,y)`. Solving for `b` gives us `x + y = x' + y'` and `y - x = y' - x'`. This is critial information that will be used to
 infer legal queen placements.
 
 Algorithm wise, since every row has to have exactly one queen. We iterate
