@@ -17,7 +17,7 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 ```text
 /
 |-- bit_manipulation/
-|   `-- UTF-8_validation/
+|   `-- utf8_validation/
 |-- computational_geometry/
 |   `-- plane_sweep/
 |       `-- video_stitching/
@@ -32,11 +32,11 @@ Solutions to a collection of algorithm problems implemented in Python 3.
     `-- recover_bst/
 ```
 
-[1]: https://leetcode.com/problems/n-queens/
-[2]: https://leetcode.com/problems/video-stitching/
-[3]: https://leetcode.com/problems/utf-8-validation/
-[4]: https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/
-[5]: https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
-[6]: https://leetcode.com/problems/three-equal-parts/
+[1]: dynamic_programming/backtracking/n_queens/
+[2]: computational_geometry/plane_sweep/
+[3]: bit_manipulation/utf8_validation
+[4]: greedy/minimum_swap/
+[5]: dynamic_programming/num_submatrix_sum_target/
+[6]: greedy/three_equal_parts/
 [7]: tree/recover_bst/
 
