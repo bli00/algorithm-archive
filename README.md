@@ -33,8 +33,8 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 ```
 
 [1]: dynamic_programming/backtracking/n_queens/
-[2]: computational_geometry/plane_sweep/
-[3]: bit_manipulation/utf8_validation
+[2]: computational_geometry/plane_sweep/video_stitching/
+[3]: bit_manipulation/utf8_validation/
 [4]: greedy/minimum_swap/
 [5]: dynamic_programming/num_submatrix_sum_target/
 [6]: greedy/three_equal_parts/
