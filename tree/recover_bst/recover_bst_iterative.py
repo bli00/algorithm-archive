@@ -10,11 +10,11 @@ def recoverTree(root: TreeNode) -> None:
     # 'prev' is the node left of 'cur' in a sorted array of the BST nodes.
     # 'prev' is initialized as a bookmarker.
     prev = TreeNode(-sys.maxsize) 
-    # 'bad' is the first node that appears out of place.
-    # 'potential' is the consecutive node to the right of 'bad' in the sorted
-    # array. 'potential' exists to handle edge cases when two consecutive
+    # 'l' is the first node that appears out of place.
+    # 'r' is the consecutive node to the right of 'l' in the sorted
+    # array. 'r' exists to handle edge cases when two consecutive
     # nodes are swapped.
-    bad, potential = None, None
+    l, r = None, None
    
     # iterative inorder traversal to read nodes from left to right
     # in an sorted fashion. Since it's a BST, an inorder traversal should
@@ -33,22 +33,22 @@ def recoverTree(root: TreeNode) -> None:
             cur = stack.pop()
             if cur.val < prev.val:
                 # if there is a decrease, something is out of place.
-                if bad:
+                if l:
                     # if the previous out of place node has been initiated,
-                    # the 'cur' bad node must be swapped with previous bad node
-                    cur.val, bad.val = bad.val, cur.val
+                    # the 'cur' l node must be swapped with previous l node
+                    cur.val, l.val = l.val, cur.val
                     return
                 else:
                     # first time encountering an misplaced node, record it and
-                    # move on. 'potential' will handle the edge case when two
+                    # move on. 'r' will handle the edge case when two
                     # consecutive nodes in the sorted iteration are swapped, in
                     # which case the second misplacement cannot be detected in
                     # the iteration.
-                    bad, potential = prev, cur
+                    l, r = prev, cur
             # record 'prev' for the next iteration
             # move pointer to handle the right sub-tree 
             prev, root = cur, cur.right
            
     # the edge case
-    bad.val, potential.val = potential.val, bad.val
+    l.val, r.val = r.val, l.val
 
