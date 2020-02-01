@@ -1,3 +1,11 @@
+import sys
+
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 def recoverTree(root: TreeNode) -> None:
     prev = TreeNode(-sys.maxsize)
     l, r = None, None
