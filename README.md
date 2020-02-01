@@ -12,6 +12,7 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 | [Minimum Swaps][4]                               | greedy              |
 | [Number of Submatrices That Sum to Target][5]    | dynamic programming |
 | [Three Equal Parts][6]                           | greedy              |
+| [Recover Binary Search Tree][7]                  | tree                |
   
 ```text
 /
@@ -24,9 +25,11 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 |   |-- backtracking/
 |   |   `-- n_queens/
 |   `-- num_submatrix_sum_target/
-`-- greedy/
-    |-- minimum_swap/
-    `-- three_equal_parts/
+|-- greedy/
+|   |-- minimum_swap/
+|   `-- three_equal_parts/
+`-- tree/
+    `-- recover_bst/
 ```
 
 [1]: https://leetcode.com/problems/n-queens/
@@ -35,4 +38,5 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 [4]: https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/
 [5]: https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/
 [6]: https://leetcode.com/problems/three-equal-parts/
+[7]: tree/recover_bst/
 
