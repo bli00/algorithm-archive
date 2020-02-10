@@ -13,7 +13,8 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 | [Number of Submatrices That Sum to Target][5]    | dynamic programming |
 | [Three Equal Parts][6]                           | greedy              |
 | [Recover Binary Search Tree][7]                  | tree                |
-  
+| [Accounts Merge][8]                              | dfs                 |
+
 ```text
 /
 |-- bit_manipulation/
@@ -25,6 +26,9 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 |   |-- backtracking/
 |   |   `-- n_queens/
 |   `-- num_submatrix_sum_target/
+|-- graph/
+|   `-- dfs/
+|       `-- accounts_merge/
 |-- greedy/
 |   |-- minimum_swap/
 |   `-- three_equal_parts/
@@ -39,4 +43,4 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 [5]: dynamic_programming/num_submatrix_sum_target/
 [6]: greedy/three_equal_parts/
 [7]: tree/recover_bst/
-
+[8]: graph/dfs/accounts_merge
