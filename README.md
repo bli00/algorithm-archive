@@ -14,6 +14,7 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 | [Three Equal Parts][6]                           | greedy              |
 | [Recover Binary Search Tree][7]                  | tree                |
 | [Accounts Merge][8]                              | dfs                 |
+| [Alphabet Board Path][9]                         | greedy              |
 
 ```text
 /
@@ -31,7 +32,8 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 |       `-- accounts_merge/
 |-- greedy/
 |   |-- minimum_swap/
-|   `-- three_equal_parts/
+|   |-- three_equal_parts/
+|   `-- alphabet_board_path/
 `-- tree/
     `-- recover_bst/
 ```
@@ -43,4 +45,5 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 [5]: dynamic_programming/num_submatrix_sum_target/
 [6]: greedy/three_equal_parts/
 [7]: tree/recover_bst/
-[8]: graph/dfs/accounts_merge
+[8]: graph/dfs/accounts_merge/
+[9]: greedy/alphabet_board_path/
