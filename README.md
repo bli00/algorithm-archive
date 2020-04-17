@@ -15,6 +15,7 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 | [Recover Binary Search Tree][7]                  | tree                |
 | [Accounts Merge][8]                              | dfs                 |
 | [Alphabet Board Path][9]                         | greedy              |
+| [Longest Arithmetic Sequence][10]                | dynamic programming |
 
 ```text
 /
@@ -26,6 +27,7 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 |-- dynamic_programming/
 |   |-- backtracking/
 |   |   `-- n_queens/
+|   |-- longest_arithmetic_sequence/
 |   `-- num_submatrix_sum_target/
 |-- graph/
 |   `-- dfs/
@@ -47,3 +49,4 @@ Solutions to a collection of algorithm problems implemented in Python 3.
 [7]: tree/recover_bst/
 [8]: graph/dfs/accounts_merge/
 [9]: greedy/alphabet_board_path/
+[10]: dynamic_programming/longest_arithmetic_sequence
