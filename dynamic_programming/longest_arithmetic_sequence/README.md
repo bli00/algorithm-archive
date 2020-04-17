@@ -46,8 +46,8 @@ TODO
 
 ### Time Complexity
 
-TODO
+O(n^2)
 
 ### Space Complexity
 
-TODO
+O(n^2)
